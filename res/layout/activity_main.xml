@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" >
+    	<ViewFlipper 
+    	    android:id="@+id/vfFliper"
+        	android:layout_width="match_parent" 
+        	android:layout_height="match_parent">
+	        <ListView
+	            android:id="@+id/lvnews"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:cacheColorHint="#00000000"/>
+        </ViewFlipper>
+    	
+    </LinearLayout>
+
+</LinearLayout>
